@@ -1,0 +1,342 @@
+/* -------------------------------------------------------------------------- */
+/*                              Reset css
+/* -------------------------------------------------------------------------- */
+
+/* Google font calling */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --body__font: "Poppins", sans-serif;
+  --content__width: 1170px;
+  --sec__gap: 100px;
+  --heading__font: ;
+  --global__color: #ffffff;
+  --main__color: #48ffbf;
+  --dark__color: #000;
+}
+body {
+  box-sizing: border-box;
+  font-family: var(--body__font);
+  transition: all 0.5s ease-in-out;
+  scroll-behavior: smooth;
+  font-weight: 200;
+  font-size: 100%;
+  overflow: hidden !important;
+  overflow-y: scroll !important;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: normal;
+  font-family: var(--heading__font);
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* container for application wraper */
+.container {
+  max-width: var(--content__width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section__gap {
+  margin-top: var(--sec__gap);
+}
+
+.global__btn {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.46px;
+  padding: 10px 30px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--main__color);
+  color: var(--dark__color);
+}
+
+.btn {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  display: none;
+}
+.view {
+  padding: 10px 40px;
+  text-transform: capitalize;
+  font-size: 18px;
+  border-radius: 5px;
+  outline: none;
+  background: var(--main__color);
+  border: none;
+  cursor: pointer;
+  color: var(--dark__color);
+}
+/* -----------------End of Reset css--------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                            header section desing
+/* -------------------------------------------------------------------------- */
+/* heasder hero area */
+.hero__area {
+  background-image: linear-gradient(rgb(17 30 10 / 66%), rgb(17 30 10 / 66%)),
+    url("https://i.ibb.co/Y03SPv2/football-bg.jpg");
+
+  max-width: 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: calc(100%);
+  width: 100%;
+  height: 100%;
+  /* padding: 0 50px; */
+  /* filter: blur(5px); */
+}
+
+.landing__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.hero__info .hero__title {
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 65px;
+  color: var(--global__color);
+}
+
+.hero__info .hero__dic {
+  color: var(--global__color);
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.hero__info .hero__btn {
+  margin-top: 30px;
+}
+
+.hero__thumbnill {
+  filter: blur(0px) !important;
+}
+
+.hero__thumbnill img {
+  width: 800px;
+  max-width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Blog section desing
+/* -------------------------------------------------------------------------- */
+.blog__single__item ul {
+  background-color: var(--dark__color);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.blog__single__item ul li:first-child {
+  margin-top: 0;
+}
+.blog__single__item ul li {
+  font-weight: 500;
+  line-height: 30px;
+  display: block;
+  border-radius: 12px;
+  color: var(--dark__color);
+  margin-top: 20px;
+  background-color: var(--global__color);
+  border: 1px solid var(--dark__color);
+}
+.blog__single__item ul li a {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 25px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+.active {
+  background-color: var(--main__color) !important;
+}
+
+.blog__main__box {
+  display: grid;
+  grid-template-columns: 25% 72%;
+  column-gap: 24px;
+}
+.blog__single__item__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 24px;
+}
+.blog__article {
+  max-width: 312px;
+}
+
+.blog__thumbnail img {
+  height: 175px;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+article.article {
+  padding: 10px;
+}
+
+.article .blog__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 1px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.article .blog__dic {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 15px;
+  color: #161616;
+}
+.article .blog__duration__meg {
+  margin-top: 20px;
+}
+.article .blog__duration__meg span {
+  margin-left: 10px;
+  font-size: 16px;
+  color: var(--dark__color);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            Footer section desing
+/* -------------------------------------------------------------------------- */
+
+.footer {
+  padding: 134px 0;
+  background-color: var(--dark__color);
+  text-align: center;
+}
+
+.footer__info h2 {
+  color: var(--global__color);
+  padding: 20px 0;
+}
+.footer__single__list {
+  width: 960px;
+  max-width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.footer__single__list ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__single__list ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--global__color);
+}
+.footer__info hr {
+  border: 1px solid rgb(39, 39, 39);
+}
+
+.footer__info .social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__info .social ul li a {
+  color: var(--global__color);
+  margin: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           mathc.html (Flag) section desing
+/* -------------------------------------------------------------------------- */
+
+.country__flag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flag__details {
+  text-align: center;
+}
+.country__flag span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+.flag__details h6 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+.flag__details p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.72px;
+}
+
+.flag__info {
+  margin: 24px;
+}
